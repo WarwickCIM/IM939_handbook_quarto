@@ -1,7 +1,7 @@
 # Introduction, Historical Perspectives & Basic Concepts
 
-```warning
-This is a stub
-```
+::: {.callout-warning}
+This page is still a stub
+:::
 
-This is a placeholder for this content: https://cagatayturkay.github.io/data-science-across-disciplines/Sessions/session-01.html
+This is a placeholder for this content: <https://cagatayturkay.github.io/data-science-across-disciplines/Sessions/session-01.html>
