@@ -8,8 +8,14 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
+    - "content/labs/week1/IM939 Lab 1 - Part 1.ipynb"
+    - content/jupyterbook-demo/notebooks.ipynb
     - summary.qmd
     - references.qmd
+
+execute: 
+  enabled: true
+  freeze: true
 
 bibliography: references.bib
 

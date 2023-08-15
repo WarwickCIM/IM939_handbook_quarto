@@ -1,3 +1,7 @@
 /env/
 /.quarto/
 .Rproj.user
+
+# Quarto book specifics
+_book/
+_freeze/
