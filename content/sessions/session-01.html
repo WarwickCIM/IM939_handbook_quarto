@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Data Science Across Disciplines - Appendix A — Content with notebooks</title>
+<title>Data Science Across Disciplines - 1&nbsp; Introduction, Historical Perspectives &amp; Basic Concepts</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -64,8 +30,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../references.html" rel="next">
-<link href="../../content/labs/week1/IM939 Lab 1 - Part 1.html" rel="prev">
+<link href="../../summary.html" rel="next">
+<link href="../../index.html" rel="prev">
 <link href="../../media/CIM_logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -97,15 +63,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<meta name="twitter:title" content="Data Science Across Disciplines - Appendix A — Content with notebooks">
+<meta name="twitter:title" content="Data Science Across Disciplines - 1&nbsp; Introduction, Historical Perspectives &amp; Basic Concepts">
 <meta name="twitter:description" content="">
-<meta name="twitter:image" content="https://warwickcim.github.io/IM939_handbook_quarto/content/jupyterbook-demo/notebooks_files/figure-html/cell-3-output-1.png">
-<meta name="twitter:image-height" content="822">
-<meta name="twitter:image-width" content="1579">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
 </head>
 
 <body class="nav-sidebar floating">
@@ -117,7 +78,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/jupyterbook-demo/notebooks.html">Appendices</a></li><li class="breadcrumb-item"><a href="../../content/jupyterbook-demo/notebooks.html"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Content with notebooks</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/sessions/session-01.html">Sessions</a></li><li class="breadcrumb-item"><a href="../../content/sessions/session-01.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction, Historical Perspectives &amp; Basic Concepts</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -179,7 +140,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/sessions/session-01.html" class="sidebar-item-text sidebar-link">
+  <a href="../../content/sessions/session-01.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction, Historical Perspectives &amp; Basic Concepts</span></span></a>
   </div>
 </li>
@@ -219,7 +180,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/jupyterbook-demo/notebooks.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../content/jupyterbook-demo/notebooks.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Content with notebooks</span></span></a>
   </div>
 </li>
@@ -237,22 +198,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#markdown-notebooks" id="toc-markdown-notebooks" class="nav-link active" data-scroll-target="#markdown-notebooks"><span class="header-section-number">A.1</span> Markdown + notebooks</a></li>
-  <li><a href="#myst-markdown" id="toc-myst-markdown" class="nav-link" data-scroll-target="#myst-markdown"><span class="header-section-number">A.2</span> MyST markdown</a></li>
-  <li><a href="#code-blocks-and-outputs" id="toc-code-blocks-and-outputs" class="nav-link" data-scroll-target="#code-blocks-and-outputs"><span class="header-section-number">A.3</span> Code blocks and outputs</a></li>
-  </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.dev/WarwickCIM/IM939_handbook_quarto/blob/main/content/jupyterbook-demo/notebooks.ipynb" class="toc-action">Edit this page</a></p><p><a href="https://github.com/WarwickCIM/IM939_handbook_quarto/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Appendix A — Content with notebooks</h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction, Historical Perspectives &amp; Basic Concepts</span></h1>
 </div>
 
 
@@ -267,66 +220,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p>You can also create content with Jupyter Notebooks. This means that you can include code blocks and their outputs in your book.</p>
-<section id="markdown-notebooks" class="level2" data-number="A.1">
-<h2 data-number="A.1" class="anchored" data-anchor-id="markdown-notebooks"><span class="header-section-number">A.1</span> Markdown + notebooks</h2>
-<p>As it is markdown, you can embed images, HTML, etc into your posts!</p>
-<p>You can also <span class="math inline">\(add_{math}\)</span> and</p>
-<p><span class="math display">\[
-math^{blocks}
-\]</span></p>
-<p>or</p>
-<p><span class="math display">\[
-\begin{aligned}
-\mbox{mean} la_{tex} \\ \\
-math blocks
-\end{aligned}
-\]</span></p>
-<p>But make sure you $Escape $your $dollar signs $you want to keep!</p>
-</section>
-<section id="myst-markdown" class="level2" data-number="A.2">
-<h2 data-number="A.2" class="anchored" data-anchor-id="myst-markdown"><span class="header-section-number">A.2</span> MyST markdown</h2>
-<p>MyST markdown works in Jupyter Notebooks as well. For more information about MyST markdown, check out <a href="https://jupyterbook.org/content/myst.html">the MyST guide in Jupyter Book</a>, or see <a href="https://myst-parser.readthedocs.io/en/latest/">the MyST markdown documentation</a>.</p>
-</section>
-<section id="code-blocks-and-outputs" class="level2" data-number="A.3">
-<h2 data-number="A.3" class="anchored" data-anchor-id="code-blocks-and-outputs"><span class="header-section-number">A.3</span> Code blocks and outputs</h2>
-<p>Jupyter Book will also embed your code blocks and output in your book. For example, here’s some sample Matplotlib code:</p>
-<div class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib <span class="im">import</span> rcParams, cycler</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>plt.ion()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="1">
-<pre><code>&lt;matplotlib.pyplot._IonContext at 0x105f807f0&gt;</code></pre>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
 </div>
 </div>
-<div class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Fixing random state for reproducibility</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">19680801</span>)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>N <span class="op">=</span> <span class="dv">10</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> [np.logspace(<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">100</span>) <span class="op">+</span> np.random.randn(<span class="dv">100</span>) <span class="op">+</span> ii <span class="cf">for</span> ii <span class="kw">in</span> <span class="bu">range</span>(N)]</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> np.array(data).T</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>cmap <span class="op">=</span> plt.cm.coolwarm</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>rcParams[<span class="st">'axes.prop_cycle'</span>] <span class="op">=</span> cycler(color<span class="op">=</span>cmap(np.linspace(<span class="dv">0</span>, <span class="dv">1</span>, N)))</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib.lines <span class="im">import</span> Line2D</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>custom_lines <span class="op">=</span> [Line2D([<span class="dv">0</span>], [<span class="dv">0</span>], color<span class="op">=</span>cmap(<span class="fl">0.</span>), lw<span class="op">=</span><span class="dv">4</span>),</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>                Line2D([<span class="dv">0</span>], [<span class="dv">0</span>], color<span class="op">=</span>cmap(<span class="fl">.5</span>), lw<span class="op">=</span><span class="dv">4</span>),</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>                Line2D([<span class="dv">0</span>], [<span class="dv">0</span>], color<span class="op">=</span>cmap(<span class="fl">1.</span>), lw<span class="op">=</span><span class="dv">4</span>)]</span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">5</span>))</span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>lines <span class="op">=</span> ax.plot(data)</span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>ax.legend(custom_lines, [<span class="st">'Cold'</span>, <span class="st">'Medium'</span>, <span class="st">'Hot'</span>])<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<p><img src="notebooks_files/figure-html/cell-3-output-1.png" width="790" height="411"></p>
+<div class="callout-body-container callout-body">
+<p>This page is still a stub</p>
 </div>
 </div>
-<p>There is a lot more that you can do with outputs (such as including interactive outputs) with your book. For more information about this, see <a href="https://jupyterbook.org">the Jupyter Book documentation</a></p>
+<p>This is a placeholder for this content: <a href="https://cagatayturkay.github.io/data-science-across-disciplines/Sessions/session-01.html" class="uri">https://cagatayturkay.github.io/data-science-across-disciplines/Sessions/session-01.html</a></p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -564,13 +473,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../content/labs/week1/IM939 Lab 1 - Part 1.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">IM939 - Lab 1 - Part 1</span></span>
+      <a href="../../index.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Data Science Across Disciplines</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../references.html" class="pagination-link">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../summary.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -578,4 +487,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/WarwickCIM/IM939_handbook_quarto/edit/main/content/sessions/session-01.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/WarwickCIM/IM939_handbook_quarto/issues/new" class="toc-action">Report an issue</a></p></div></div></div></div></footer></body></html>
