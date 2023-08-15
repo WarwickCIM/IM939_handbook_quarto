@@ -1,62 +1,83 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="generator" content="quarto-1.3.433">
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.433">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-
-<title>Data Science Across Disciplines - 3&nbsp; IM939 - Lab 1 - Part 1</title>
-<style>
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-  vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
+    <title>Data Science Across Disciplines - IM939 - Lab 1 - Part 1</title>    <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      div.columns{display: flex; gap: min(4vw, 1.5em);}
+      div.column{flex: auto; overflow-x: auto;}
+      div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+      ul.task-list{list-style: none;}
+      ul.task-list li input[type="checkbox"] {
+        width: 0.8em;
+        margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+        vertical-align: middle;
+      }
+      /* CSS for syntax highlighting */
+      pre > code.sourceCode { white-space: pre; position: relative; }
+      pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+      pre > code.sourceCode > span:empty { height: 1.2em; }
+      .sourceCode { overflow: visible; }
+      code.sourceCode > span { color: inherit; text-decoration: inherit; }
+      div.sourceCode { margin: 1em 0; }
+      pre.sourceCode { margin: 0; }
+      @media screen {
+      div.sourceCode { overflow: auto; }
+      }
+      @media print {
+      pre > code.sourceCode { white-space: pre-wrap; }
+      pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+      }
+      pre.numberSource code
+        { counter-reset: source-line 0; }
+      pre.numberSource code > span
+        { position: relative; left: -4em; counter-increment: source-line; }
+      pre.numberSource code > span > a:first-child::before
+        { content: counter(source-line);
+          position: relative; left: -1em; text-align: right; vertical-align: baseline;
+          border: none; display: inline-block;
+          -webkit-touch-callout: none; -webkit-user-select: none;
+          -khtml-user-select: none; -moz-user-select: none;
+          -ms-user-select: none; user-select: none;
+          padding: 0 4px; width: 4em;
+        }
+      pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+      div.sourceCode
+        {   }
+      @media screen {
+      pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+      }
+    </style>
+    <style>
+      .quarto-embed-header {
+        height: 3em;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid 1px;
+      }
+      .quarto-embed-header h6 {
+        font-size: 1em;
+        padding-top: 0.6em;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-weight: 300;
+      }
+      .quarto-embed-header a.quarto-download-embed {
+        font-size: 0.7em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+    </style>
+    
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../../site_libs/clipboard/clipboard.min.js"></script>
@@ -64,8 +85,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../content/labs/week1/labs-wk1.html" rel="next">
-<link href="../../../content/labs/lab-01.html" rel="prev">
 <link href="../../../media/CIM_logo.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
@@ -76,7 +95,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
+     <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -95,24 +114,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script>
-
-
-<meta name="twitter:title" content="Data Science Across Disciplines - 3&nbsp; IM939 - Lab 1 - Part 1">
+}</script>  
+      <meta name="twitter:title" content="Data Science Across Disciplines - IM939 - Lab 1 - Part 1">
 <meta name="twitter:description" content="">
 <meta name="twitter:card" content="summary">
 </head>
-
-<body class="nav-sidebar floating">
-
-<div id="quarto-search-results"></div>
+  <body class="nav-sidebar floating quarto-notebook">
+    <div class="quarto-embed-header">
+      <h6><i class="bi bi-journal-code"></i> labs-wk1.1.ipynb</h6>
+      <a href="../../../content/labs/week1/labs-wk1.1.ipynb" class="btn btn-primary quarto-download-embed" download="labs-wk1.1.ipynb">Download Notebook</a>
+    </div>
+     <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../content/labs/lab-01.html">Labs</a></li><li class="breadcrumb-item"><a href="../../../content/labs/week1/IM939 Lab 1 - Part 1.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">IM939 - Lab 1 - Part 1</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Data Science Across Disciplines
+      </li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -197,7 +218,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../content/labs/week1/IM939 Lab 1 - Part 1.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../content/labs/week1/IM939 Lab 1 - Part 1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">IM939 - Lab 1 - Part 1</span></span></a>
   </div>
 </li>
@@ -242,33 +263,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#python" id="toc-python" class="nav-link active" data-scroll-target="#python"><span class="header-section-number">3.1</span> Python?</a>
+  <li><a href="#im939---lab-1---part-1" id="toc-im939---lab-1---part-1" class="nav-link active" data-scroll-target="#im939---lab-1---part-1"><span class="header-section-number">1</span> IM939 - Lab 1 - Part 1</a>
   <ul class="collapse">
-  <li><a href="#anaconda" id="toc-anaconda" class="nav-link" data-scroll-target="#anaconda"><span class="header-section-number">3.1.1</span> Anaconda</a></li>
-  <li><a href="#jupter-notebooks" id="toc-jupter-notebooks" class="nav-link" data-scroll-target="#jupter-notebooks"><span class="header-section-number">3.1.2</span> Jupter Notebooks</a></li>
-  </ul></li>
-  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started"><span class="header-section-number">3.2</span> Getting started</a></li>
-  <li><a href="#data-types" id="toc-data-types" class="nav-link" data-scroll-target="#data-types"><span class="header-section-number">4</span> Data Types</a>
+  <li><a href="#python" id="toc-python" class="nav-link" data-scroll-target="#python"><span class="header-section-number">1.1</span> Python?</a>
   <ul class="collapse">
-  <li><a href="#int-floats-strings" id="toc-int-floats-strings" class="nav-link" data-scroll-target="#int-floats-strings"><span class="header-section-number">4.1</span> int, floats, strings</a>
+  <li><a href="#anaconda" id="toc-anaconda" class="nav-link" data-scroll-target="#anaconda"><span class="header-section-number">1.1.1</span> Anaconda</a></li>
+  <li><a href="#jupter-notebooks" id="toc-jupter-notebooks" class="nav-link" data-scroll-target="#jupter-notebooks"><span class="header-section-number">1.1.2</span> Jupter Notebooks</a></li>
+  </ul></li>
+  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started"><span class="header-section-number">1.2</span> Getting started</a></li>
+  </ul></li>
+  <li><a href="#data-types" id="toc-data-types" class="nav-link" data-scroll-target="#data-types"><span class="header-section-number">2</span> Data Types</a>
   <ul class="collapse">
-  <li><a href="#lists-and-dictionaries" id="toc-lists-and-dictionaries" class="nav-link" data-scroll-target="#lists-and-dictionaries"><span class="header-section-number">4.1.1</span> lists and dictionaries</a></li>
-  </ul></li>
-  </ul></li>
-  <li><a href="#variables" id="toc-variables" class="nav-link" data-scroll-target="#variables"><span class="header-section-number">5</span> Variables</a>
+  <li><a href="#int-floats-strings" id="toc-int-floats-strings" class="nav-link" data-scroll-target="#int-floats-strings"><span class="header-section-number">2.1</span> int, floats, strings</a>
   <ul class="collapse">
-  <li><a href="#bringing-it-all-together" id="toc-bringing-it-all-together" class="nav-link" data-scroll-target="#bringing-it-all-together"><span class="header-section-number">5.1</span> Bringing it all together</a></li>
+  <li><a href="#lists-and-dictionaries" id="toc-lists-and-dictionaries" class="nav-link" data-scroll-target="#lists-and-dictionaries"><span class="header-section-number">2.1.1</span> lists and dictionaries</a></li>
   </ul></li>
-  <li><a href="#congratulations" id="toc-congratulations" class="nav-link" data-scroll-target="#congratulations"><span class="header-section-number">6</span> Congratulations</a></li>
+  </ul></li>
+  <li><a href="#variables" id="toc-variables" class="nav-link" data-scroll-target="#variables"><span class="header-section-number">3</span> Variables</a>
+  <ul class="collapse">
+  <li><a href="#bringing-it-all-together" id="toc-bringing-it-all-together" class="nav-link" data-scroll-target="#bringing-it-all-together"><span class="header-section-number">3.1</span> Bringing it all together</a></li>
+  </ul></li>
+  <li><a href="#congratulations" id="toc-congratulations" class="nav-link" data-scroll-target="#congratulations"><span class="header-section-number">4</span> Congratulations</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.dev/WarwickCIM/IM939_handbook_quarto/blob/main/content/labs/week1/IM939 Lab 1 - Part 1.ipynb" class="toc-action">Edit this page</a></p><p><a href="https://github.com/WarwickCIM/IM939_handbook_quarto/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.dev/WarwickCIM/IM939_handbook_quarto/blob/main/content/labs/week1/labs-wk1.1.ipynb" class="toc-action">Edit this page</a></p><p><a href="https://github.com/WarwickCIM/IM939_handbook_quarto/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
+<main class="content page-columns page-full" id="quarto-document-content">      <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">IM939 - Lab 1 - Part 1</span></h1>
+<h1 class="title">IM939 - Lab 1 - Part 1</h1>
 </div>
 
 
@@ -281,162 +303,166 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
   
 
-</header>
-
+</header>     <section id="im939---lab-1---part-1" class="level1 page-columns page-full" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> IM939 - Lab 1 - Part 1</h1>
+<div class="{callout-note}">
+<p>This is a copy of the regular <a href="../../../content/labs/week1/IM939 Lab 1 - Part 1.html">Jupyter notebook</a>, for embedding it in a <code>qmd</code> file to see if they are formatted differently.</p>
+</div>
 <p>Welcome to the first Python lab.</p>
 <p>Our aim is to introduce a little bit of Python and help you be comfortable with using Jupyter notebooks. No previous knowledge is assumed and questions are encouraged!</p>
 <p>Please make sure you have Anaconda Python installed and running on your computer. Instructions for doing this on a Windows 10 machine can be found in the video below. There is a little code before the video which is needed to display the video in the notebook, you can ignore this for now.</p>
 <p>For your convenience, the installation files for anaconda for each platform are linked below.</p>
 <p><a href="https://repo.anaconda.com/archive/Anaconda3-2020.07-Windows-x86_64.exe">Windows</a> <a href="https://repo.anaconda.com/archive/Anaconda3-2020.07-MacOSX-x86_64.pkg">MacOS</a></p>
-<section id="python" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="python"><span class="header-section-number">3.1</span> Python?</h2>
+<section id="python" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="python"><span class="header-section-number">1.1</span> Python?</h2>
 <p>Python is a very popular general purpose programming language. Data scientists use it to clean up, analyse and visualise data. A major strength of python is that the core Python functionality can be extended using libraries. In future labs, you will learn about popular data science libraries such as pandas and numpy.</p>
 <p>It is useful to think of programming languages as a structured way to tell the computer what to do. We cover some of the basic features of Python in this lab.</p>
-<section id="anaconda" class="level3" data-number="3.1.1">
-<h3 data-number="3.1.1" class="anchored" data-anchor-id="anaconda"><span class="header-section-number">3.1.1</span> Anaconda</h3>
+<section id="anaconda" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="anaconda"><span class="header-section-number">1.1.1</span> Anaconda</h3>
 <p><a href="https://anaconda.org/">Anaconda</a> is a collection of different programs. These programs include Python, many of the most popular data science libaries, Jupyter notebooks and development environments such as <a href="https://code.visualstudio.com/">VS Code</a> or <a href="https://www.spyder-ide.org/">Spyder</a>, which are Integrated Development Environments (IDEs) that we can use for python.</p>
 </section>
-<section id="jupter-notebooks" class="level3" data-number="3.1.2">
-<h3 data-number="3.1.2" class="anchored" data-anchor-id="jupter-notebooks"><span class="header-section-number">3.1.2</span> Jupter Notebooks</h3>
+<section id="jupter-notebooks" class="level3" data-number="1.1.2">
+<h3 data-number="1.1.2" class="anchored" data-anchor-id="jupter-notebooks"><span class="header-section-number">1.1.2</span> Jupter Notebooks</h3>
 <p>Jupyter notebooks, such as this one, allow you to combine text and code into documents you can edit in the browser. The power of these notebooks is in documenting or describing what you are doing with the code alongside that code. For example, you could detail why you chose a particular clustering algorithm above the clustering code itself. In other words, it add narrative and helps clarify your workflow.</p>
 </section>
 </section>
-<section id="getting-started" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="getting-started"><span class="header-section-number">3.2</span> Getting started</h2>
+<section id="getting-started" class="level2 page-columns page-full" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="getting-started"><span class="header-section-number">1.2</span> Getting started</h2>
 <p>If you send Python a number then it will print that number for you.</p>
-<div class="cell" data-execution_count="1">
+<div class="cell-container column-page-left"><div class="cell-decorator"><pre>In [1]:</pre></div><div class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">45</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="1">
 <pre><code>45</code></pre>
 </div>
-</div>
+</div></div>
 <p>You will see both the input and output displayed. The input will have a label next to it like ‘In [1]’ where the number tells you how much code has already been sent to the Python interpreter (the programming interpreting the Python code and returnign the result). A line such as ‘In [100]’ tells you that 99 code cells have been passed to the Python interpreter in the current session.</p>
 <p>Python can carry out simple arithetic.</p>
-<div class="cell" data-execution_count="2">
+<div class="cell-container column-page-left"><div class="cell-decorator"><pre>In [2]:</pre></div><div class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dv">44</span> <span class="op">+</span> <span class="dv">87</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="2">
 <pre><code>131</code></pre>
 </div>
-</div>
-<div class="cell" data-execution_count="3">
+</div></div>
+<div class="cell-container column-page-left"><div class="cell-decorator"><pre>In [3]:</pre></div><div class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="dv">188</span> <span class="op">/</span> <span class="dv">12</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="3">
 <pre><code>15.666666666666666</code></pre>
 </div>
-</div>
-<div class="cell" data-execution_count="4">
+</div></div>
+<div class="cell-container column-page-left"><div class="cell-decorator"><pre>In [4]:</pre></div><div class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="dv">46</span> <span class="op">-</span> <span class="dv">128</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="4">
 <pre><code>-82</code></pre>
 </div>
-</div>
+</div></div>
 <p>Each time the code in the cell is run and the result from the Python interpreter is displayed.</p>
 </section>
-<section id="data-types" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Data Types</h1>
-<section id="int-floats-strings" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="int-floats-strings"><span class="header-section-number">4.1</span> int, floats, strings</h2>
+</section>
+<section id="data-types" class="level1 page-columns page-full" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Data Types</h1>
+<section id="int-floats-strings" class="level2 page-columns page-full" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="int-floats-strings"><span class="header-section-number">2.1</span> int, floats, strings</h2>
 <p>Integers are whole numbers. We used them above.</p>
 <p>You can also have floats (numbers with decimal points)</p>
-<div class="cell" data-execution_count="5">
+<div class="cell-container column-page-left"><div class="cell-decorator"><pre>In [5]:</pre></div><div class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fl">33.4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="5">
 <pre><code>33.4</code></pre>
 </div>
-</div>
+</div></div>
 <p>and a series of characters (strings).</p>
-<div class="cell" data-execution_count="6">
+<div class="cell-container column-page-left"><div class="cell-decorator"><pre>In [6]:</pre></div><div class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">'I have a plan, sir.'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="6">
 <pre><code>'I have a plan, sir.'</code></pre>
 </div>
-</div>
+</div></div>
 <p>Data types are great and operators such as * do different things depending on the data type. For instance,</p>
-<div class="cell" data-execution_count="7">
+<div class="cell-container column-page-left"><div class="cell-decorator"><pre>In [7]:</pre></div><div class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="dv">33</span> <span class="op">*</span> <span class="dv">3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="7">
 <pre><code>99</code></pre>
 </div>
-</div>
+</div></div>
 <p>That seems quite sensible. What about if we had a string? Run teh below line. What is the * doing?</p>
-<div class="cell" data-execution_count="8">
+<div class="cell-container column-page-left"><div class="cell-decorator"><pre>In [8]:</pre></div><div class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">'I have a plan, sir'</span> <span class="op">*</span> <span class="dv">3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="8">
 <pre><code>'I have a plan, sirI have a plan, sirI have a plan, sir'</code></pre>
 </div>
-</div>
+</div></div>
 <p>There are also operators which only work with particular data types.</p>
-<div class="cell" data-execution_count="9">
+<div class="cell-container column-page-left"><div class="cell-decorator"><pre>In [9]:</pre></div><div class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co">'I have a plan, sir.'</span> <span class="op">/</span> <span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-error">
 <pre><code>TypeError: unsupported operand type(s) for /: 'str' and 'int'</code></pre>
 </div>
-</div>
+</div></div>
 <p>This error message is very informative indeed. It tells us the line which caused the problem and that we have an error. Specifically, our error is a TypeError.</p>
 <p>The line</p>
 <p>‘I have a cunning plan’ / 2</p>
 <p>consists of</p>
 <p>string / int</p>
 <p>We are trying to divide a string and int. The / operand is not able to divide a string by an int.</p>
-<section id="lists-and-dictionaries" class="level3" data-number="4.1.1">
-<h3 data-number="4.1.1" class="anchored" data-anchor-id="lists-and-dictionaries"><span class="header-section-number">4.1.1</span> lists and dictionaries</h3>
+<section id="lists-and-dictionaries" class="level3 page-columns page-full" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="lists-and-dictionaries"><span class="header-section-number">2.1.1</span> lists and dictionaries</h3>
 <p>You can collect multiple values in a list.</p>
-<div class="cell" data-execution_count="10">
+<div class="cell-container column-page-left"><div class="cell-decorator"><pre>In [10]:</pre></div><div class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>[<span class="dv">35</span>, <span class="st">'brown'</span>, <span class="st">'yes'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="10">
 <pre><code>[35, 'brown', 'yes']</code></pre>
 </div>
-</div>
+</div></div>
 <p>Or add keys to the values as a dictionary.</p>
-<div class="cell" data-execution_count="11">
+<div class="cell-container column-page-left"><div class="cell-decorator"><pre>In [11]:</pre></div><div class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>{<span class="st">'age'</span>:<span class="dv">35</span>, <span class="st">'hair colour'</span>: <span class="st">'brown'</span>, <span class="st">'Glasses'</span>: <span class="st">'yes'</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="11">
 <pre><code>{'age': 35, 'hair colour': 'brown', 'Glasses': 'yes'}</code></pre>
 </div>
-</div>
+</div></div>
 </section>
 </section>
 </section>
-<section id="variables" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Variables</h1>
+<section id="variables" class="level1 page-columns page-full" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Variables</h1>
 <p>Variables are bins for storing things in. These things can be data types. For example, the below creates a variable called my_height and stores the in 140 there.</p>
-<div class="cell" data-execution_count="12">
+<div class="cell-container column-page-left"><div class="cell-decorator"><pre>In [12]:</pre></div><div class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>my_height <span class="op">=</span> <span class="dv">140</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+</div></div>
 <p>The Python interpreter is now storing the int 140 in a bin called my_height. If you pass the variable name to the interpreter then it will behave just like if you typed in 140 instead.</p>
-<div class="cell" data-execution_count="13">
+<div class="cell-container column-page-left"><div class="cell-decorator"><pre>In [13]:</pre></div><div class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>my_height</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="13">
 <pre><code>140</code></pre>
 </div>
-</div>
+</div></div>
 <p>140</p>
 <p>Variables are neat when it comes to lists.</p>
-<div class="cell" data-execution_count="14">
+<div class="cell-container column-page-left"><div class="cell-decorator"><pre>In [14]:</pre></div><div class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>my_heights <span class="op">=</span> [<span class="dv">231</span>, <span class="dv">234</span>, <span class="dv">43</span>]</span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>my_heights</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="14">
 <pre><code>[231, 234, 43]</code></pre>
 </div>
-</div>
-<div class="cell" data-execution_count="15">
+</div></div>
+<div class="cell-container column-page-left"><div class="cell-decorator"><pre>In [15]:</pre></div><div class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>my_heights[<span class="dv">1</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="15">
 <pre><code>234</code></pre>
 </div>
-</div>
+</div></div>
 <p>Wait, what happened above? What do you think the [1] does?</p>
 <p>You can index multiple values from a list.</p>
-<div class="cell" data-execution_count="16">
+<div class="cell-container column-page-left"><div class="cell-decorator"><pre>In [16]:</pre></div><div class="cell" data-execution_count="16">
 <div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>my_heights[<span class="dv">0</span>:<span class="dv">2</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="16">
 <pre><code>[231, 234]</code></pre>
 </div>
-</div>
-<section id="bringing-it-all-together" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="bringing-it-all-together"><span class="header-section-number">5.1</span> Bringing it all together</h2>
+</div></div>
+<section id="bringing-it-all-together" class="level2 page-columns page-full" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="bringing-it-all-together"><span class="header-section-number">3.1</span> Bringing it all together</h2>
 <p>What does the below do?</p>
-<div class="cell" data-execution_count="17">
+<div class="cell-container column-page-left"><div class="cell-decorator"><pre>In [17]:</pre></div><div class="cell" data-execution_count="17">
 <div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>radius <span class="op">=</span> <span class="dv">40</span></span>
 <span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>pi <span class="op">=</span> <span class="fl">3.1415</span></span>
 <span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>circle_area <span class="op">=</span> pi <span class="op">*</span> (radius <span class="op">*</span> radius)</span>
@@ -445,31 +471,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a>square_area <span class="op">=</span> length <span class="op">*</span> length</span>
 <span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a>my_areas <span class="op">=</span> [circle_area, square_area]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell" data-execution_count="18">
+</div></div>
+<div class="cell-container column-page-left"><div class="cell-decorator"><pre>In [18]:</pre></div><div class="cell" data-execution_count="18">
 <div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>my_areas</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="18">
 <pre><code>[5026.400000000001, 144]</code></pre>
 </div>
-</div>
+</div></div>
 <p>As an aside, you can include comments which are not evaluated by the Python interpreter.</p>
-<div class="cell" data-execution_count="19">
+<div class="cell-container column-page-left"><div class="cell-decorator"><pre>In [19]:</pre></div><div class="cell" data-execution_count="19">
 <div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co"># this is a number</span></span>
 <span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="co"># another comment</span></span>
 <span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">33</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+</div></div>
 </section>
 </section>
-<section id="congratulations" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> Congratulations</h1>
+<section id="congratulations" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Congratulations</h1>
 <p>You’ve reached the end of the first notebook. We’ve looked at basic data type and variables. These are key components of all programming languages and a key part of working with data.</p>
 <p>In the next notebook we will examine using libraries, loading in data, loops and functions.</p>
 
 
 </section>
-
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+     </main> <!-- /main -->  <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -701,21 +725,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../../../content/labs/lab-01.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Labs</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../../../content/labs/week1/labs-wk1.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Lab 1 - embedded notebook</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
-</div> <!-- /content -->
-
-
+</script>  </div> <!-- /content --> 
+  
 
 </body></html>

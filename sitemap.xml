@@ -2,30 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://warwickcim.github.io/IM939_handbook_quarto/index.html</loc>
-    <lastmod>2023-08-15T15:16:04.709Z</lastmod>
+    <lastmod>2023-08-15T15:37:12.965Z</lastmod>
   </url>
   <url>
     <loc>https://warwickcim.github.io/IM939_handbook_quarto/content/sessions/session-01.html</loc>
-    <lastmod>2023-08-15T15:16:04.711Z</lastmod>
+    <lastmod>2023-08-15T15:37:12.967Z</lastmod>
   </url>
   <url>
     <loc>https://warwickcim.github.io/IM939_handbook_quarto/summary.html</loc>
-    <lastmod>2023-08-15T15:16:04.713Z</lastmod>
+    <lastmod>2023-08-15T15:37:12.971Z</lastmod>
   </url>
   <url>
     <loc>https://warwickcim.github.io/IM939_handbook_quarto/content/labs/lab-01.html</loc>
-    <lastmod>2023-08-15T15:16:04.715Z</lastmod>
+    <lastmod>2023-08-15T15:37:12.973Z</lastmod>
   </url>
   <url>
     <loc>https://warwickcim.github.io/IM939_handbook_quarto/content/labs/week1/IM939 Lab 1 - Part 1.html</loc>
-    <lastmod>2023-08-15T15:16:04.723Z</lastmod>
+    <lastmod>2023-08-15T15:37:12.978Z</lastmod>
+  </url>
+  <url>
+    <loc>https://warwickcim.github.io/IM939_handbook_quarto/content/labs/week1/labs-wk1.html</loc>
+    <lastmod>2023-08-15T15:37:12.981Z</lastmod>
   </url>
   <url>
     <loc>https://warwickcim.github.io/IM939_handbook_quarto/content/jupyterbook-demo/notebooks.html</loc>
-    <lastmod>2023-08-15T15:16:04.726Z</lastmod>
+    <lastmod>2023-08-15T15:37:12.985Z</lastmod>
   </url>
   <url>
     <loc>https://warwickcim.github.io/IM939_handbook_quarto/references.html</loc>
-    <lastmod>2023-08-15T15:16:04.728Z</lastmod>
+    <lastmod>2023-08-15T15:37:12.987Z</lastmod>
   </url>
 </urlset>
