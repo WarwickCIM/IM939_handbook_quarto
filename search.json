@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "IM939_handbook_quarto",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n2"
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "content/labs/week1/IM939 Lab 1 - Part 1.html",
+    "href": "content/labs/week1/IM939 Lab 1 - Part 1.html",
+    "title": "2  IM939 - Lab 1 - Part 1",
+    "section": "",
+    "text": "3 Data Types\nVariables are bins for storing things in. These things can be data types. For example, the below creates a variable called my_height and stores the in 140 there.\nmy_height = 140\nThe Python interpreter is now storing the int 140 in a bin called my_height. If you pass the variable name to the interpreter then it will behave just like if you typed in 140 instead.\nmy_height\n\n140\n140\nVariables are neat when it comes to lists.\nmy_heights = [231, 234, 43]\nmy_heights\n\n[231, 234, 43]\nmy_heights[1]\n\n234\nWait, what happened above? What do you think the [1] does?\nYou can index multiple values from a list.\nmy_heights[0:2]\n\n[231, 234]\nYou’ve reached the end of the first notebook. We’ve looked at basic data type and variables. These are key components of all programming languages and a key part of working with data.\nIn the next notebook we will examine using libraries, loading in data, loops and functions."
+  },
+  {
+    "objectID": "content/labs/week1/IM939 Lab 1 - Part 1.html#python",
+    "href": "content/labs/week1/IM939 Lab 1 - Part 1.html#python",
+    "title": "2  IM939 - Lab 1 - Part 1",
+    "section": "2.1 Python?",
+    "text": "2.1 Python?\nPython is a very popular general purpose programming language. Data scientists use it to clean up, analyse and visualise data. A major strength of python is that the core Python functionality can be extended using libraries. In future labs, you will learn about popular data science libraries such as pandas and numpy.\nIt is useful to think of programming languages as a structured way to tell the computer what to do. We cover some of the basic features of Python in this lab.\n\n2.1.1 Anaconda\nAnaconda is a collection of different programs. These programs include Python, many of the most popular data science libaries, Jupyter notebooks and development environments such as VS Code or Spyder, which are Integrated Development Environments (IDEs) that we can use for python.\n\n\n2.1.2 Jupter Notebooks\nJupyter notebooks, such as this one, allow you to combine text and code into documents you can edit in the browser. The power of these notebooks is in documenting or describing what you are doing with the code alongside that code. For example, you could detail why you chose a particular clustering algorithm above the clustering code itself. In other words, it add narrative and helps clarify your workflow."
+  },
+  {
+    "objectID": "content/labs/week1/IM939 Lab 1 - Part 1.html#getting-started",
+    "href": "content/labs/week1/IM939 Lab 1 - Part 1.html#getting-started",
+    "title": "2  IM939 - Lab 1 - Part 1",
+    "section": "2.2 Getting started",
+    "text": "2.2 Getting started\nIf you send Python a number then it will print that number for you.\n\n45\n\n45\n\n\nYou will see both the input and output displayed. The input will have a label next to it like ‘In [1]’ where the number tells you how much code has already been sent to the Python interpreter (the programming interpreting the Python code and returnign the result). A line such as ‘In [100]’ tells you that 99 code cells have been passed to the Python interpreter in the current session.\nPython can carry out simple arithetic.\n\n44 + 87\n\n131\n\n\n\n188 / 12\n\n15.666666666666666\n\n\n\n46 - 128\n\n-82\n\n\nEach time the code in the cell is run and the result from the Python interpreter is displayed."
+  },
+  {
+    "objectID": "content/labs/week1/IM939 Lab 1 - Part 1.html#int-floats-strings",
+    "href": "content/labs/week1/IM939 Lab 1 - Part 1.html#int-floats-strings",
+    "title": "2  IM939 - Lab 1 - Part 1",
+    "section": "3.1 int, floats, strings",
+    "text": "3.1 int, floats, strings\nIntegers are whole numbers. We used them above.\nYou can also have floats (numbers with decimal points)\n\n33.4\n\n33.4\n\n\nand a series of characters (strings).\n\n'I have a plan, sir.'\n\n'I have a plan, sir.'\n\n\nData types are great and operators such as * do different things depending on the data type. For instance,\n\n33 * 3\n\n99\n\n\nThat seems quite sensible. What about if we had a string? Run teh below line. What is the * doing?\n\n'I have a plan, sir' * 3\n\n'I have a plan, sirI have a plan, sirI have a plan, sir'\n\n\nThere are also operators which only work with particular data types.\n\n# 'I have a plan, sir.' / 2\n\nThis error message is very informative indeed. It tells us the line which caused the problem and that we have an error. Specifically, our error is a TypeError.\nThe line\n‘I have a cunning plan’ / 2\nconsists of\nstring / int\nWe are trying to divide a string and int. The / operand is not able to divide a string by an int.\n\n3.1.1 lists and dictionaries\nYou can collect multiple values in a list.\n\n[35, 'brown', 'yes']\n\n[35, 'brown', 'yes']\n\n\nOr add keys to the values as a dictionary.\n\n{'age':35, 'hair colour': 'brown', 'Glasses': 'yes'}\n\n{'age': 35, 'hair colour': 'brown', 'Glasses': 'yes'}"
+  },
+  {
+    "objectID": "content/labs/week1/IM939 Lab 1 - Part 1.html#bringing-it-all-together",
+    "href": "content/labs/week1/IM939 Lab 1 - Part 1.html#bringing-it-all-together",
+    "title": "2  IM939 - Lab 1 - Part 1",
+    "section": "4.1 Bringing it all together",
+    "text": "4.1 Bringing it all together\nWhat does the below do?\n\nradius = 40\npi = 3.1415\ncircle_area = pi * (radius * radius)\n\nlength = 12\nsquare_area = length * length\n\nmy_areas = [circle_area, square_area]\n\n\nmy_areas\n\n[5026.400000000001, 144]\n\n\nAs an aside, you can include comments which are not evaluated by the Python interpreter.\n\n# this is a number\n# another comment\nn = 33"
+  },
+  {
+    "objectID": "content/jupyterbook-demo/notebooks.html#markdown-notebooks",
+    "href": "content/jupyterbook-demo/notebooks.html#markdown-notebooks",
+    "title": "3  Content with notebooks",
+    "section": "3.1 Markdown + notebooks",
+    "text": "3.1 Markdown + notebooks\nAs it is markdown, you can embed images, HTML, etc into your posts!\n\nYou can also \\(add_{math}\\) and\n\\[\nmath^{blocks}\n\\]\nor\n\\[\n\\begin{aligned}\n\\mbox{mean} la_{tex} \\\\ \\\\\nmath blocks\n\\end{aligned}\n\\]\nBut make sure you $Escape $your $dollar signs $you want to keep!"
+  },
+  {
+    "objectID": "content/jupyterbook-demo/notebooks.html#myst-markdown",
+    "href": "content/jupyterbook-demo/notebooks.html#myst-markdown",
+    "title": "3  Content with notebooks",
+    "section": "3.2 MyST markdown",
+    "text": "3.2 MyST markdown\nMyST markdown works in Jupyter Notebooks as well. For more information about MyST markdown, check out the MyST guide in Jupyter Book, or see the MyST markdown documentation."
+  },
+  {
+    "objectID": "content/jupyterbook-demo/notebooks.html#code-blocks-and-outputs",
+    "href": "content/jupyterbook-demo/notebooks.html#code-blocks-and-outputs",
+    "title": "3  Content with notebooks",
+    "section": "3.3 Code blocks and outputs",
+    "text": "3.3 Code blocks and outputs\nJupyter Book will also embed your code blocks and output in your book. For example, here’s some sample Matplotlib code:\n\nfrom matplotlib import rcParams, cycler\nimport matplotlib.pyplot as plt\nimport numpy as np\nplt.ion()\n\n&lt;matplotlib.pyplot._IonContext at 0x105a4c8e0&gt;\n\n\n\n# Fixing random state for reproducibility\nnp.random.seed(19680801)\n\nN = 10\ndata = [np.logspace(0, 1, 100) + np.random.randn(100) + ii for ii in range(N)]\ndata = np.array(data).T\ncmap = plt.cm.coolwarm\nrcParams['axes.prop_cycle'] = cycler(color=cmap(np.linspace(0, 1, N)))\n\n\nfrom matplotlib.lines import Line2D\ncustom_lines = [Line2D([0], [0], color=cmap(0.), lw=4),\n                Line2D([0], [0], color=cmap(.5), lw=4),\n                Line2D([0], [0], color=cmap(1.), lw=4)]\n\nfig, ax = plt.subplots(figsize=(10, 5))\nlines = ax.plot(data)\nax.legend(custom_lines, ['Cold', 'Medium', 'Hot']);\n\n\n\n\nThere is a lot more that you can do with outputs (such as including interactive outputs) with your book. For more information about this, see the Jupyter Book documentation"
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "4  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n2"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  }
+]
