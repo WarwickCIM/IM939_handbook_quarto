@@ -1,0 +1,13 @@
+name: IM939
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python = 3.10.11
+  - matplotlib
+  - pandas
+  - pip
+  - jupyter-book
+  - jupyterlab
+  - pip:
+    - ghp-import
